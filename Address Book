@@ -1,1 +1,37 @@
+shahood = "Name: Shahood Alvi. Nickname: None. DOB: 1/1/08. Email: 267741@burlcoschools.org. Phone: 609-551-5616"
+marcos = "Name: Marcos Paulino. Nickname: Cosine. DOB: 5/15/08. Email: 267895@burlcoschools.org. Phone: 609-611-2155"
+ryan = "Name: Ryan Stiles. Nickname: Baxter. DOB: 10/13/07. Email: 267947@burlcoschools.org. Phone: 609-121-7373"
+muntag = "Name: Muntag Diallo. Nickname: Moon. DOB: 12/14/08. Email: 268154@burlcoschools.org. Phone: 609-776-0795"
+leo = "Name: Leo Hart. Nickname: Unknown. DOB: 1/29/08. Email: 268095@burlcoschools.org. Phone: 609-665-7867"
+mason = "Name: Mason Bush. Nickname: Big Mace. DOB: 1/3/08. Email: 268262@burlcoschools.org. Phone: 609-987-1234"
+gavin = "Name: Gavin Carnivale. Nickname: None. DOB: 1/23/08. Email: 267764@burlcoschools.org. Phone: 609-121-6543"
+nate = "Name: Nathan Carn. Nickname: Nate. DOB: 2/12/08. Email: 268021@burlcoschools.org. Phone: 609-675-1259"
+chris = "Name: Christopher Hodson. Nickname: Chris. DOB: 12/26/07. Email: 268359@burlcoschools.org. Phone: 609-194-7840"
+jaiden = "Name: Jaidan Rankus. Nickname: Unknown. DOB: 8/29/08. Email: 268188@burlcoschools.org. Phone: 609-275-6810"
+aidan = "Name: Aidan Rodriguez. Nickname: indigo606. DOB: 12/4/07. Email: 267922@burlcoschools.org. Phone: 609-654-8012. Address: 4 Victoria Court, Mount Holly, New Jersey. Zip Code: 08060. Height: 5'7. Weight: 273. Eye Color: Brown. Hair texture: Wavy 2a."
+
+print (shahood)
+print()
+print(marcos)
+print()
+print(ryan)
+print()
+print(muntag)
+print()
+print(leo)
+print()
+print(mason)
+print()
+print(gavin)
+print()
+print(nate)
+print()
+print(chris)
+print()
+print(jaiden)
+print()
+print(aidan)
+
+
+
 
