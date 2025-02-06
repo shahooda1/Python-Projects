@@ -1,0 +1,67 @@
+saName = "Shahood Alvi"
+saAge = 17.08
+saEmail = "267741@burlcoschools.org"
+saGrade = 11
+saLicense = False
+
+mpName = "Marcos Paulino"
+mpAge = 16.71
+mpEmail = "267895@burlcoschools.org"
+mpGrade = 11
+mpLicense = False
+
+rsName = "Ryan Stiles"
+rsAge = 17.33
+rsEmail = "267947@burlcoschools.org"
+rsGrade = 11
+rsLicense = True
+
+mdName = "Muntag Diallo"
+mdAge = 16.13
+mdEmail = "268154@burlcoschools.org"
+mdGrade = 11
+mdLicense = False
+
+lhName
+lhAge
+lhEmail
+lhGrade
+lhLicense = True
+
+mbName
+mbAge
+mbEmail
+mbGrade
+mbLicense = False
+
+gcName
+gcAge
+gcEmail
+gcGrade
+gcLicense = True
+
+ncName
+ncAge
+ncEmail = "268021@burlcoschools.org"
+ncGrade = 11
+ncLicense = False
+
+chName = "Christopher Hodson"
+chAge = 17.12
+chEmail = "268359@burlcoschools.org"
+chGrade = 11
+chLicense = False
+
+jrName = "Jaiden Rankus"
+jrAge = 16.42
+jrEmail = "268188@burlcoschools.org"
+jrGrade = 11
+jrLicense = False
+
+arName = "Aidan Rodriguez"
+arAge = 17.17
+arEmail = "267922@burlcoschools.org"
+arGrade = 11
+arLicense = False
+
+
