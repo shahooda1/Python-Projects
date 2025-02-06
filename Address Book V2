@@ -22,26 +22,26 @@ mdEmail = "268154@burlcoschools.org"
 mdGrade = 11
 mdLicense = False
 
-lhName
-lhAge
-lhEmail
-lhGrade
+lhName = "Leo Hart"
+lhAge = 17.02
+lhEmail = "268095@burlcoschools.org"
+lhGrade = 11
 lhLicense = True
 
-mbName
-mbAge
-mbEmail
-mbGrade
+mbName = "Mason Bush"
+mbAge = 17.08
+mbEmail = "268262@burlcoschools.org"
+mbGrade = 11
 mbLicense = False
 
-gcName
-gcAge
-gcEmail
-gcGrade
+gcName = "Gavin Carnivale"
+gcAge = 17.04
+gcEmail = "267764@burlcoschools.org"
+gcGrade = 11
 gcLicense = True
 
-ncName
-ncAge
+ncName = "Nathan Carn"
+ncAge = 16.98
 ncEmail = "268021@burlcoschools.org"
 ncGrade = 11
 ncLicense = False
