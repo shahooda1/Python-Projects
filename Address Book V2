@@ -5,7 +5,7 @@ saGrade = 11
 saLicense = False
 
 mpName = "Marcos Paulino"
-mpAge = 16.71
+mpAge = 16.73
 mpEmail = "267895@burlcoschools.org"
 mpGrade = 11
 mpLicense = False
@@ -53,7 +53,7 @@ chGrade = 11
 chLicense = False
 
 jrName = "Jaiden Rankus"
-jrAge = 16.42
+jrAge = 16.44
 jrEmail = "268188@burlcoschools.org"
 jrGrade = 11
 jrLicense = False
@@ -63,5 +63,104 @@ arAge = 17.17
 arEmail = "267922@burlcoschools.org"
 arGrade = 11
 arLicense = False
+
+print("_______________________________________")
+print("Name: " + saName)
+print("Age: " + str(saAge))
+print("Email: " + saEmail)
+print("Grade: " + str(saGrade))
+print("License: " + str(saLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + mpName)
+print("Age: " + str(mpAge))
+print("Email: " + mpEmail)
+print("Grade: " + str(mpGrade))
+print("License: " + str(mpLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + rsName)
+print("Age: " + str(rsAge))
+print("Email: " + rsEmail)
+print("Grade: " + str(rsGrade))
+print("License: " + str(rsLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + mdName)
+print("Age: " + str(mdAge))
+print("Email: " + mdEmail)
+print("Grade: " + str(mdGrade))
+print("License: " + str(mdLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + lhName)
+print("Age: " + str(lhAge))
+print("Email: " + lhEmail)
+print("Grade: " + str(lhGrade))
+print("License: " + str(lhLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + mbName)
+print("Age: " + str(mbAge))
+print("Email: " + mbEmail)
+print("Grade: " + str(mbGrade))
+print("License: " + str(mbLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + gcName)
+print("Age: " + str(gcAge))
+print("Email: " + gcEmail)
+print("Grade: " + str(gcGrade))
+print("License: " + str(gcLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + ncName)
+print("Age: " + str(ncAge))
+print("Email: " + ncEmail)
+print("Grade: " + str(ncGrade))
+print("License: " + str(ncLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + chName)
+print("Age: " + str(chAge))
+print("Email: " + chEmail)
+print("Grade: " + str(chGrade))
+print("License: " + str(chLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + jrName)
+print("Age: " + str(jrAge))
+print("Email: " + jrEmail)
+print("Grade: " + str(jrGrade))
+print("License: " + str(sjrLicense))
+print("_______________________________________")
+print()
+
+print("_______________________________________")
+print("Name: " + arName)
+print("Age: " + str(arAge))
+print("Email: " + arEmail)
+print("Grade: " + str(arGrade))
+print("License: " + str(arLicense))
+print("_______________________________________")
+print()
 
 
