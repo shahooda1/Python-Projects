@@ -150,7 +150,7 @@ print("Name: " + jrName)
 print("Age: " + str(jrAge))
 print("Email: " + jrEmail)
 print("Grade: " + str(jrGrade))
-print("License: " + str(sjrLicense))
+print("License: " + str(jrLicense))
 print("_______________________________________")
 print()
 
