@@ -1,3 +1,5 @@
+#declaring variables for each person's information
+
 saName = "Shahood Alvi"
 saAge = 17.08
 saEmail = "267741@burlcoschools.org"
@@ -63,6 +65,8 @@ arAge = 17.17
 arEmail = "267922@burlcoschools.org"
 arGrade = 11
 arLicense = False
+
+#printing the information of each person
 
 print("_______________________________________")
 print("Name: " + saName)
