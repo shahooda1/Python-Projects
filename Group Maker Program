@@ -4,6 +4,8 @@ students = ["Shahood" , "Ryan" , "Marcos" , "Aidan" , "Jaiden" , "Gavin" , "Munt
 
 random.shuffle(students)
 
+groupSize = int(input("Would you like groups of 2, 3, or 4?"))
+
 group1 = []
 group2 = []
 group3 = []
@@ -15,7 +17,75 @@ group8 = []
 group9 = []
 group10 = []
 
-for x in students: 
-  print(x)
+if groupSize == 2:
+
+  group1.append(students[0])
+  group1.append(students[1])
+  
+  group2.append(students[2])
+  group2.append(students[3])
+  
+  group3.append(students[4])
+  group3.append(students[5])
+  
+  group4.append(students[6])
+  group4.append(students[7])
+  
+  group5.append(students[8])
+  group5.append(students[9])
+  
+  group6.append(students[10])
+  group6.append(students[11])
+  
+  group7.append(students[12])
+  group7.append(students[13])
+  
+  group8.append(students[14])
+  group8.append(students[15])
+  
+  group9.append(students[16])
+  group9.append(students[17])
+  
+  group10.append(students[18])
+  group10.append(students[19])
+
+
+elif groupSize == 3:
+
+  group1.append(students[0])
+  group1.append(students[1])
+  group1.append(students[2])
+
+  group2.append(students[3])
+  group2.append(students[4])
+  group2.append(students[5])
+
+  group3.append(students[6])
+  group3.append(students[7])
+  group3.append(students[8])
+
+  group4.append(students[9])
+  group4.append(students[10])
+  group4.append(students[11])
+
+  group5.append(students[12])
+  group5.append(students[13])
+  group5.append(students[14])
+  group5.append(students[15])
+
+  group6.append(students[16])
+  group6.append(students[17])
+  group6.append(students[18])
+  group6.append(students[19])
+
+
+elif groupSize == 4:
+
+  
+
+print(group1)
+print(group2)
+print(group3)
+print(group4)
 
 
