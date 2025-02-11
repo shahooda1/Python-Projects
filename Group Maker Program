@@ -1,11 +1,17 @@
 import random
 
-students = ["Shahood" , "Ryan" , "Marcos" , "Aidan" , "Jaiden" , "Gavin" , "Muntag" , "Nate" , "Leo" , "Mason" , "ChrisH" , "Abraham" , "Martins" , "Wes" , "Andrew" , "Caleb" , "Martins" , "ChrisD" , "Tyler" , "Brandon"]
+groupsWork = True
 
+#list of all students
+students = ["Shahood" , "Ryan" , "Marcos" , "Aidan" , "Jaiden" , "Gavin" , "Muntag" , "Nate" , "Leo" , "Mason" , "ChrisH" , "Abraham" , "Martins" , "Wes" , "Andrew" , "Caleb" , "Alex" , "chrisD" , "Tyler" , "Brandon"]
+
+#shuffling the students list
 random.shuffle(students)
 
+#asking for group size and storing it in a variable
 groupSize = int(input("Would you like groups of 2, 3, or 4?"))
 
+#creating empty groups
 group1 = []
 group2 = []
 group3 = []
@@ -16,6 +22,43 @@ group7 = []
 group8 = []
 group9 = []
 group10 = []
+
+#list for students that can't be in the same group
+exclusion1 = []
+
+#variables for the names of excluded students
+name1 = None
+name2 = None
+
+
+#variables for the names of excluded students
+name3 = None
+name4 = None
+
+#asking if there are exclusions and storing the yes or no in a variable
+exclusions1YN = input("Are there any two students that can't be in the same group? Y / N")
+
+#empty variable for the second time it asks for exclusions
+exclusions2YN = None
+
+if exclusions1YN.upper() == "Y":
+
+  name1 = input("Provide the name of the first student: ")
+  name2 = input("Provide the name of the second student: ")
+
+  exclusion1.append(name1)
+  exclusion1.append(name2)
+
+  exclusions2YN = input("Is there another pair of students that shouldn't be together? Y / N")
+
+  if exclusions2YN.upper() == "Y":
+
+    name3 = input("Provide the name of the first student: ")
+    name4 = input("Provide the name of the second student: ")
+
+    exclusion1.append(name3)
+    exclusion1.append(name4)
+
 
 if groupSize == 2:
 
@@ -49,6 +92,27 @@ if groupSize == 2:
   group10.append(students[18])
   group10.append(students[19])
 
+  if exclusion1.len() != 0:
+
+    if exclusion1[0] == group1
+
+    
+    
+
+
+
+
+  print(group1)
+  print(group2)
+  print(group3)
+  print(group4)
+  print(group5)
+  print(group6)
+  print(group7)
+  print(group8)
+  print(group9)
+  print(group10)
+
 
 elif groupSize == 3:
 
@@ -78,14 +142,47 @@ elif groupSize == 3:
   group6.append(students[18])
   group6.append(students[19])
 
+  print(group1)
+  print(group2)
+  print(group3)
+  print(group4)
+  print(group5)
+  print(group6)
+
 
 elif groupSize == 4:
 
-  
+  group1.append(students[0])
+  group1.append(students[1])
+  group1.append(students[2])
+  group1.append(students[3])
 
-print(group1)
-print(group2)
-print(group3)
-print(group4)
+  group2.append(students[4])
+  group2.append(students[5])
+  group2.append(students[6])
+  group2.append(students[7])
+
+  group3.append(students[8])
+  group3.append(students[9])
+  group3.append(students[10])
+  group3.append(students[11])
+
+  group4.append(students[12])
+  group4.append(students[13])
+  group4.append(students[14])
+  group4.append(students[15])
+
+  group5.append(students[16])
+  group5.append(students[17])
+  group5.append(students[18])
+  group5.append(students[19])
+
+  print(group1)
+  print(group2)
+  print(group3)
+  print(group4)
+  print(group5)
+
+
 
 
