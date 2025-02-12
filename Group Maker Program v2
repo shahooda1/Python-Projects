@@ -1,3 +1,197 @@
 import random
 
-students = ["Shahood" , "Ryan" , "Marcos" , "Aidan" , "Jaiden" , "Gavin" , "Muntag" , "Nate" , "Leo" , "Mason" , "ChrisH" , "Abraham" , "Martins" , "Wes" , "Andrew" , "Caleb" , "Alex" , "chrisD" , "Tyler" , "Brandon"]
+#automatically assume groups don't work
+groupsWork = False
+
+#list of students
+students = ["Shahood" , "Ryan" , "Marcos" , "Aidan" , "Jaiden" , "Gavin" , "Muntag" , "Nate" , "Leo" , "Mason" , "ChrisH" , "Abraham" , "Martins" , "Wes" , "Andrew" , "Caleb" , "Alex" , "ChrisD" , "Tyler" , "Brandon"]
+
+#empty groups
+group1 = []
+group2 = []
+group3 = []
+group4 = []
+group5 = []
+group6 = []
+group7 = []
+group8 = []
+group9 = []
+group10 = []
+
+random.shuffle(students)
+
+exclusion1 = None
+exclusion2 = None
+
+exclusion3 = None
+exclusion4 = None
+
+#getting user input and formatting it properly
+groupSize = int(input("Would you like groups of 2, 3, or 4?"))
+
+exclusion1YN = input("Are there any two students that shouldn't work together? Y / N")
+
+
+if exclusion1YN.upper() == "Y":
+
+  exclusion1 = input("Enter the name of the first student: ")
+  exclusion2 = input("Enter the name of the second student: ")
+
+  exclusion1 = exclusion1.lower()
+  exclusion2 = exclusion2.lower()
+  exclusion1 = exclusion1.capitalize()
+  exclusion2 = exclusion2.capitalize()
+
+    
+  exclusion2YN = input("Is there another pair of students that shouldn't work together? Y / N")
+
+
+  if exclusion2YN.upper() == "Y":
+
+    exclusion3 = input("Enter the name of the first student: ")
+    exclusion4 = input("Enter the name of the second student: ")
+
+    exclusion3 = exclusion3.lower()
+    exclusion4 = exclusion4.lower()
+
+
+    exclusion3 = exclusion3.capitalize()
+    exclusion4 = exclusion4.capitalize()
+
+elif exclusion1YN.upper() == "N":
+
+  groupsWork = True
+
+
+
+while groupsWork == False:
+  
+    if students.index(exclusion1) == students.index(exclusion2) - 1 or students.index(exclusion2) == students.index(exclusion1) - 1:
+
+      random.shuffle(students)
+
+    if exclusion2YN.upper() == "Y":
+
+      if students.index(exclusion3) == students.index(exclusion4) - 1 or students.index(exclusion4) == students.index(exclusion3) - 1:
+
+        random.shuffle(students)
+
+    else:
+
+      groupsWork = True
+
+
+#printing groups based on the size provided by the user
+
+if groupSize == 2:
+
+  group1.append(students[0])
+  group1.append(students[1])
+  
+  group2.append(students[2])
+  group2.append(students[3])
+  
+  group3.append(students[4])
+  group3.append(students[5])
+  
+  group4.append(students[6])
+  group4.append(students[7])
+  
+  group5.append(students[8])
+  group5.append(students[9])
+  
+  group6.append(students[10])
+  group6.append(students[11])
+  
+  group7.append(students[12])
+  group7.append(students[13])
+  
+  group8.append(students[14])
+  group8.append(students[15])
+  
+  group9.append(students[16])
+  group9.append(students[17])
+  
+  group10.append(students[18])
+  group10.append(students[19])
+
+
+  print(group1)
+  print(group2)
+  print(group3)
+  print(group4)
+  print(group5)
+  print(group6)
+  print(group7)
+  print(group8)
+  print(group9)
+  print(group10)
+ 
+
+elif groupSize == 3:
+
+  group1.append(students[0])
+  group1.append(students[1])
+  group1.append(students[2])
+
+  group2.append(students[3])
+  group2.append(students[4])
+  group2.append(students[5])
+
+  group3.append(students[6])
+  group3.append(students[7])
+  group3.append(students[8])
+
+  group4.append(students[9])
+  group4.append(students[10])
+  group4.append(students[11])
+
+  group5.append(students[12])
+  group5.append(students[13])
+  group5.append(students[14])
+  group5.append(students[15])
+
+  group6.append(students[16])
+  group6.append(students[17])
+  group6.append(students[18])
+  group6.append(students[19])
+
+  print(group1)
+  print(group2)
+  print(group3)
+  print(group4)
+  print(group5)
+  print(group6)
+    
+elif groupSize == 4:
+
+  group1.append(students[0])
+  group1.append(students[1])
+  group1.append(students[2])
+  group1.append(students[3])
+
+  group2.append(students[4])
+  group2.append(students[5])
+  group2.append(students[6])
+  group2.append(students[7])
+
+  group3.append(students[8])
+  group3.append(students[9])
+  group3.append(students[10])
+  group3.append(students[11])
+
+  group4.append(students[12])
+  group4.append(students[13])
+  group4.append(students[14])
+  group4.append(students[15])
+
+  group5.append(students[16])
+  group5.append(students[17])
+  group5.append(students[18])
+  group5.append(students[19])
+
+  print(group1)
+  print(group2)
+  print(group3)
+  print(group4)
+  print(group5)
