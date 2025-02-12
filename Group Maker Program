@@ -35,6 +35,15 @@ name2 = None
 name3 = None
 name4 = None
 
+#variables to swap students from the groups
+swap1 = None
+swap2 = None
+swap3 = None
+swap4 = None
+
+
+
+
 #asking if there are exclusions and storing the yes or no in a variable
 exclusions1YN = input("Are there any two students that can't be in the same group? Y / N")
 
@@ -92,12 +101,77 @@ if groupSize == 2:
   group10.append(students[18])
   group10.append(students[19])
 
-  if exclusion1.len() != 0:
 
-    if exclusion1[0] == group1
 
-    
-    
+  if exclusion1.len() == 2:
+
+    if exclusion1[0] == group1[0] and exclusion1[1] == group1[1]:
+
+      swap1 = group1[0]
+      swap2 = group7[0]
+
+      group1.pop(0)
+      group7.pop(0)
+
+      group1.append(swap2)
+      group7.append(swap1)
+      
+    elif exclusion1[1] == group1[0] and exclusion[0] == group1[1]:
+
+      swap1 = group1[0]
+      swap2 = group7[0]
+
+      group1.pop(0)
+      group7.pop(0)
+
+      group1.append(swap2)
+      group7.append(swap1)
+
+
+    if exclusion1[0] == group2[0] and exclusion1[1] == group2[1]:
+
+      swap1 = group2[0]
+      swap2 = group7[0]
+
+      group2.pop(0)
+      group7.pop(0)
+
+      group2.append(swap2)
+      group7.append(swap1)
+      
+    elif exclusion1[1] == group1[0] and exclusion[0] == group1[1]:
+
+      swap1 = group1[0]
+      swap2 = group7[0]
+
+      group2.pop(0)
+      group7.pop(0)
+
+      group2.append(swap2)
+      group7.append(swap1)
+
+    if exclusion1[0] == group3[0] and exclusion1[1] == group3[1]:
+
+      swap1 = group3[0]
+      swap2 = group7[0]
+
+      group3.pop(0)
+      group7.pop(0)
+
+      group3.append(swap2)
+      group7.append(swap1)
+      
+    elif exclusion1[1] == group1[0] and exclusion[0] == group1[1]:
+
+      swap1 = group1[0]
+      swap2 = group7[0]
+
+      group3.pop(0)
+      group7.pop(0)
+
+      group3.append(swap2)
+      group7.append(swap1)
+
 
 
 
