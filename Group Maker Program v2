@@ -1,12 +1,13 @@
 import random
 
-#automatically assume groups don't work
+# Automatically assume groups don't work
 groupsWork = False
 
-#list of students
-students = ["Shahood" , "Ryan" , "Marcos" , "Aidan" , "Jaiden" , "Gavin" , "Muntag" , "Nate" , "Leo" , "Mason" , "ChrisH" , "Abraham" , "Martins" , "Wes" , "Andrew" , "Caleb" , "Alex" , "ChrisD" , "Tyler" , "Brandon"]
+# List of students
+students = ["Shahood", "Ryan", "Marcos", "Aidan", "Jaiden", "Gavin", "Muntag", "Nate", "Leo", "Mason",
+            "ChrisH", "Abraham", "Martins", "Wes", "Andrew", "Caleb", "Alex", "ChrisD", "Tyler", "Brandon"]
 
-#empty groups
+# Empty groups
 group1 = []
 group2 = []
 group3 = []
@@ -22,176 +23,145 @@ random.shuffle(students)
 
 exclusion1 = None
 exclusion2 = None
-
 exclusion3 = None
 exclusion4 = None
 
-#getting user input and formatting it properly
-groupSize = int(input("Would you like groups of 2, 3, or 4?"))
+# Getting user input
+groupSize = int(input("Would you like groups of 2, 3, or 4? "))
 
-exclusion1YN = input("Are there any two students that shouldn't work together? Y / N")
+exclusion1YN = None
+exclusion2YN = None
 
+while True:
+    exclusion1YN = input("Are there any two students that shouldn't work together? Y / N ")
+    exclusion1YN = exclusion1YN.upper()
 
-if exclusion1YN.upper() == "Y":
+    if exclusion1YN == "Y":
+        break
+    elif exclusion1YN == "N":
+        break
+    else:
+        print("Please enter 'Y' or 'N'")
+        continue
 
-  exclusion1 = input("Enter the name of the first student: ")
-  exclusion2 = input("Enter the name of the second student: ")
+if exclusion1YN == "Y":
 
-  exclusion1 = exclusion1.lower()
-  exclusion2 = exclusion2.lower()
-  exclusion1 = exclusion1.capitalize()
-  exclusion2 = exclusion2.capitalize()
+    while True:
+        exclusion1 = input("Enter the name of the first student: ")
+        exclusion1 = exclusion1.lower().capitalize()
 
-    
-  exclusion2YN = input("Is there another pair of students that shouldn't work together? Y / N")
+        if exclusion1 in students:
+            break
+        else:
+            print("Please enter a valid name")
+            continue
 
+    while True:
+        exclusion2 = input("Enter the name of the second student: ")
+        exclusion2 = exclusion2.lower().capitalize()
 
-  if exclusion2YN.upper() == "Y":
+        if exclusion2 in students:
+            break
+        else:
+            print("Please enter a valid name")
+            continue
 
-    exclusion3 = input("Enter the name of the first student: ")
-    exclusion4 = input("Enter the name of the second student: ")
+    while True:
+        exclusion2YN = input("Is there another pair of students that shouldn't work together? Y / N ")
+        exclusion2YN = exclusion2YN.upper()
 
-    exclusion3 = exclusion3.lower()
-    exclusion4 = exclusion4.lower()
+        if exclusion2YN == "Y":
+            break
+        elif exclusion2YN == "N":
+            break
+        else:
+            print("Please enter 'Y' or 'N'")
+            continue
 
+        if exclusion2YN == "Y":
+            while True:
+              exclusion3 = input("Enter the name of the first student: ")
+              exclusion3 = exclusion3.lower().capitalize()
+      
+              if exclusion3 in students:
+                  break
+              else:
+                  print("Please enter a valid name")
+                  continue
 
-    exclusion3 = exclusion3.capitalize()
-    exclusion4 = exclusion4.capitalize()
+            while True:
+              exclusion4 = input("Enter the name of the first student: ")
+              exclusion4 = exclusion4.lower().capitalize()
+      
+              if exclusion4 in students:
+                  break
+              else:
+                  print("Please enter a valid name")
+                  continue
 
 elif exclusion1YN.upper() == "N":
-
-  groupsWork = True
-
-
+    groupsWork = True
 
 while groupsWork == False:
-  
     if students.index(exclusion1) == students.index(exclusion2) - 1 or students.index(exclusion2) == students.index(exclusion1) - 1:
-
-      random.shuffle(students)
+        random.shuffle(students)
+        continue
 
     if exclusion2YN.upper() == "Y":
+        if students.index(exclusion3) == students.index(exclusion4) - 1 or students.index(exclusion4) == students.index(exclusion3) - 1:
+            random.shuffle(students)
+            continue
 
-      if students.index(exclusion3) == students.index(exclusion4) - 1 or students.index(exclusion4) == students.index(exclusion3) - 1:
+    groupsWork = True
 
-        random.shuffle(students)
-
-    else:
-
-      groupsWork = True
-
-
-#printing groups based on the size provided by the user
-
+# Printing groups based on the size provided by the user
 if groupSize == 2:
+    group1 = [students[0], students[1]]
+    group2 = [students[2], students[3]]
+    group3 = [students[4], students[5]]
+    group4 = [students[6], students[7]]
+    group5 = [students[8], students[9]]
+    group6 = [students[10], students[11]]
+    group7 = [students[12], students[13]]
+    group8 = [students[14], students[15]]
+    group9 = [students[16], students[17]]
+    group10 = [students[18], students[19]]
 
-  group1.append(students[0])
-  group1.append(students[1])
-  
-  group2.append(students[2])
-  group2.append(students[3])
-  
-  group3.append(students[4])
-  group3.append(students[5])
-  
-  group4.append(students[6])
-  group4.append(students[7])
-  
-  group5.append(students[8])
-  group5.append(students[9])
-  
-  group6.append(students[10])
-  group6.append(students[11])
-  
-  group7.append(students[12])
-  group7.append(students[13])
-  
-  group8.append(students[14])
-  group8.append(students[15])
-  
-  group9.append(students[16])
-  group9.append(students[17])
-  
-  group10.append(students[18])
-  group10.append(students[19])
-
-
-  print(group1)
-  print(group2)
-  print(group3)
-  print(group4)
-  print(group5)
-  print(group6)
-  print(group7)
-  print(group8)
-  print(group9)
-  print(group10)
- 
+    print(group1)
+    print(group2)
+    print(group3)
+    print(group4)
+    print(group5)
+    print(group6)
+    print(group7)
+    print(group8)
+    print(group9)
+    print(group10)
 
 elif groupSize == 3:
+    group1 = [students[0], students[1], students[2]]
+    group2 = [students[3], students[4], students[5]]
+    group3 = [students[6], students[7], students[8]]
+    group4 = [students[9], students[10], students[11]]
+    group5 = [students[12], students[13], students[14], students[15]]
+    group6 = [students[16], students[17], students[18], students[19]]
 
-  group1.append(students[0])
-  group1.append(students[1])
-  group1.append(students[2])
+    print(group1)
+    print(group2)
+    print(group3)
+    print(group4)
+    print(group5)
+    print(group6)
 
-  group2.append(students[3])
-  group2.append(students[4])
-  group2.append(students[5])
-
-  group3.append(students[6])
-  group3.append(students[7])
-  group3.append(students[8])
-
-  group4.append(students[9])
-  group4.append(students[10])
-  group4.append(students[11])
-
-  group5.append(students[12])
-  group5.append(students[13])
-  group5.append(students[14])
-  group5.append(students[15])
-
-  group6.append(students[16])
-  group6.append(students[17])
-  group6.append(students[18])
-  group6.append(students[19])
-
-  print(group1)
-  print(group2)
-  print(group3)
-  print(group4)
-  print(group5)
-  print(group6)
-    
 elif groupSize == 4:
+    group1 = [students[0], students[1], students[2], students[3]]
+    group2 = [students[4], students[5], students[6], students[7]]
+    group3 = [students[8], students[9], students[10], students[11]]
+    group4 = [students[12], students[13], students[14], students[15]]
+    group5 = [students[16], students[17], students[18], students[19]]
 
-  group1.append(students[0])
-  group1.append(students[1])
-  group1.append(students[2])
-  group1.append(students[3])
-
-  group2.append(students[4])
-  group2.append(students[5])
-  group2.append(students[6])
-  group2.append(students[7])
-
-  group3.append(students[8])
-  group3.append(students[9])
-  group3.append(students[10])
-  group3.append(students[11])
-
-  group4.append(students[12])
-  group4.append(students[13])
-  group4.append(students[14])
-  group4.append(students[15])
-
-  group5.append(students[16])
-  group5.append(students[17])
-  group5.append(students[18])
-  group5.append(students[19])
-
-  print(group1)
-  print(group2)
-  print(group3)
-  print(group4)
-  print(group5)
+    print(group1)
+    print(group2)
+    print(group3)
+    print(group4)
+    print(group5)
