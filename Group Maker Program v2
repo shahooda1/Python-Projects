@@ -78,26 +78,27 @@ if exclusion1YN == "Y":
             print("Please enter 'Y' or 'N'")
             continue
 
-        if exclusion2YN == "Y":
-            while True:
-              exclusion3 = input("Enter the name of the first student: ")
-              exclusion3 = exclusion3.lower().capitalize()
+if exclusion2YN == "Y":
+  while True:
+    exclusion3 = input("Enter the name of the first student: ")
+    exclusion3 = exclusion3.lower().capitalize()
       
-              if exclusion3 in students:
-                  break
-              else:
-                  print("Please enter a valid name")
-                  continue
+    if exclusion3 in students:
+      break
+    else:
+      print("Please enter a valid name")
+      continue
 
-            while True:
-              exclusion4 = input("Enter the name of the first student: ")
-              exclusion4 = exclusion4.lower().capitalize()
+
+  while True:
+    exclusion4 = input("Enter the name of the first student: ")
+    exclusion4 = exclusion4.lower().capitalize()
       
-              if exclusion4 in students:
-                  break
-              else:
-                  print("Please enter a valid name")
-                  continue
+    if exclusion4 in students:
+      break
+    else:
+      print("Please enter a valid name")
+      continue
 
 elif exclusion1YN.upper() == "N":
     groupsWork = True
